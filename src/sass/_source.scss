@@ -7,7 +7,8 @@ $base-font-linespacing-lg: 1.5rem;
 $base-font-weight-semibold: 31.25rem;
 $base-colour-static-white: #ffffff;
 $base-size-lg: 0.75rem;
-$base-radius-md: 0.5rem;
+$base-radius-sm: 0.25rem;
+$global-size-border-width: 0.062rem;
 $base-colour-grey-100: #d9d9d9;
 $global-colour-textonlight: #282828;
 $base-font-weight-regular: 25rem;
@@ -39,12 +40,12 @@ $base-colour-pink-300: #cd0087;
  flex-direction: row;
  align-items: center;
  gap: $base-size-lg;
- padding: 0.687rem 3.562rem 0.687rem $base-size-lg;
+ padding: 0.687rem $base-size-lg;
  background: $base-colour-static-white;
  width: 15.937rem;
- border: 0.093rem solid $base-colour-grey-100;
- box-shadow: inset 0 0.093rem 0 0 $base-colour-grey-100, inset -0.093rem 0 0 0 $base-colour-grey-100, inset 0 -0.093rem 0 0 $base-colour-grey-100, inset 0.093rem 0 0 0 $base-colour-grey-100;
- border-radius: $base-radius-md;
+ border: $global-size-border-width solid $base-colour-grey-100;
+ box-shadow: inset 0 $global-size-border-width 0 0 $base-colour-grey-100, inset (-$global-size-border-width) 0 0 0 $base-colour-grey-100, inset 0 (-$global-size-border-width) 0 0 $base-colour-grey-100, inset $global-size-border-width 0 0 0 $base-colour-grey-100;
+ border-radius: $base-radius-sm;
 }
 @mixin input_resting_input-box_input-text {
  display: flex;
@@ -55,7 +56,7 @@ $base-colour-pink-300: #cd0087;
  font-weight: 400;
  font-style: normal;
  line-height: 20px;
- width: 11.625rem;
+ width: 14.437rem;
 }
 @mixin input_hover {
  display: flex;
@@ -84,9 +85,9 @@ $base-colour-pink-300: #cd0087;
  padding: 0.687rem $base-size-lg;
  background: $base-colour-static-white;
  width: 15.937rem;
- border: 0.093rem solid $base-colour-grey-300;
- box-shadow: inset 0 0.093rem 0 0 $base-colour-grey-300, inset -0.093rem 0 0 0 $base-colour-grey-300, inset 0 -0.093rem 0 0 $base-colour-grey-300, inset 0.093rem 0 0 0 $base-colour-grey-300;
- border-radius: $base-radius-md;
+ border: $global-size-border-width solid $base-colour-grey-300;
+ box-shadow: inset 0 $global-size-border-width 0 0 $base-colour-grey-300, inset (-$global-size-border-width) 0 0 0 $base-colour-grey-300, inset 0 (-$global-size-border-width) 0 0 $base-colour-grey-300, inset $global-size-border-width 0 0 0 $base-colour-grey-300;
+ border-radius: $base-radius-sm;
 }
 @mixin input_hover_input-box_input-text {
  display: flex;
@@ -126,9 +127,9 @@ $base-colour-pink-300: #cd0087;
  padding: 0.687rem $base-size-lg;
  background: $base-colour-static-white;
  width: 15.937rem;
- border: 0.093rem solid $base-colour-pink-300;
- box-shadow: inset 0 0.093rem 0 0 $base-colour-pink-300, inset -0.093rem 0 0 0 $base-colour-pink-300, inset 0 -0.093rem 0 0 $base-colour-pink-300, inset 0.093rem 0 0 0 $base-colour-pink-300;
- border-radius: $base-radius-md;
+ border: 0.125rem solid $base-colour-pink-300;
+ box-shadow: inset 0 0.125rem 0 0 $base-colour-pink-300, inset -0.125rem 0 0 0 $base-colour-pink-300, inset 0 -0.125rem 0 0 $base-colour-pink-300, inset 0.125rem 0 0 0 $base-colour-pink-300;
+ border-radius: $base-radius-sm;
 }
 @mixin input_active_input-box_input-text {
  display: flex;
